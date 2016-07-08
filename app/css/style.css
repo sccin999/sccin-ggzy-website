@@ -362,7 +362,6 @@ th {
   background: #d2730e;
 }
 
-/* custom style */
 body {
   font-family: "Microsoft Yahei", "微软雅黑", "黑体", "宋体";
   font-size: 12px;
@@ -533,7 +532,7 @@ li {
 .news-wrap .news-list li {
   padding-left: 12px;
   height: 32px;
-  background: url('../images/list-dot.gif?1466478484') no-repeat left center;
+  background: url('../images/list-dot.gif?1467966998') no-repeat left center;
 }
 .news-wrap .news-list li a {
   line-height: 32px;
@@ -1169,7 +1168,7 @@ li {
 .list-paading .tab-ul li li {
   padding-left: 12px;
   height: 30px;
-  background: url('../images/list-dot.gif?1466478484') no-repeat left center;
+  background: url('../images/list-dot.gif?1467966998') no-repeat left center;
 }
 .list-paading .tab-ul li li a {
   line-height: 30px;
