@@ -148,24 +148,25 @@ $(function () {
 })
 /*$(function){}*/
 
+/*
+ //弹窗
+ var window_html='<div class="window-wrap"><div class="window-head"><span class="window-tit"></span><a href="javascript:void(0)" class="window-colse"><i class="icon-win-close"></i></a></div><div class="window-main"></div></div><div class="mask"></div>';
+ function hxb_window(tit,wrap){
+ $(window_html).appendTo("body");
+ var $window=$(".window-wrap");
+
+ $(".window-tit").text(tit);
+ $(wrap).clone().show().appendTo(".window-main");
+
+ $window.css({marginTop:-$window.height()/2,marginLeft:-$window.width()/2});
 
 
-//弹窗
-var window_html = '<div class="window-wrap"><div class="window-head"><span class="window-tit"></span><a href="javascript:void(0)" class="window-colse"><i class="icon-win-close"></i></a></div><div class="window-main"></div></div><div class="mask"></div>';
-function hxb_window(tit, wrap) {
-    $(window_html).appendTo("body");
-    var $window = $(".window-wrap");
 
-    $(".window-tit").text(tit);
-    $(wrap).clone().show().appendTo(".window-main");
-
-    $window.css({marginTop: -$window.height() / 2, marginLeft: -$window.width() / 2});
+ $(".window-colse").on('click', function () {
+ $(".window-wrap,.mask").remove();
+ });
 
 
-    $(".window-colse").on('click', function () {
-        $(".window-wrap,.mask").remove();
-    });
+ }
 
-
-}
-
+ */

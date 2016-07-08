@@ -262,16 +262,28 @@
 <!-- End footer -->
 <!-- 弹窗 Start  -->
 <div class="ques_window">
-    <p>请输入您的意见内容</p>
-
+    <div class="poptit">
+        <a href="javascript:;" title="关闭" class="close">×</a>
+        <a>质疑投诉</a>
+    </div>
     <form action="" return="false">
-        <textarea name="" cols="30" rows="6"
-                  style="width: 100%; border-radius: 5px; border: 1px solid #ccc;"></textarea>
-        <br>
-        <button class="btn">提交</button>
+        <ul>
+            <li>您的姓名：<span>*</span> <input type="text" required="required" placeholder="此项为必填项"/></li>
+            <li>您的手机：<span>*</span> <input type="text" required="required" placeholder="此项为必填项"/></li>
+            <li>您的邮箱：<span>*</span> <input type="text" required="required" placeholder="此项为必填项"/></li>
+            <li>您的标题：<span>*</span> <input type="text" required="required" placeholder="此项为必填项"/></li>
+            <li class="content">
+                <div>您的内容：<span>*</span></div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="此项为必填项"></textarea>
+            </li>
+            <button class="btn">提交</button>
+
+        </ul>
+
+
     </form>
 </div>
-
+<div class="theme-popover-mask"></div>
 <!-- 弹窗 End  -->
 </body>
 <!--[if (gte IE 9)|!(IE)]><!-->
@@ -289,9 +301,16 @@
 <script src="js/general.js" type="text/javascript"></script>
 <!-- endbuild -->
 <script>
-    $(function () {
-        $("#add_question").on('click', function () {
-            hxb_window("质疑投诉", ".ques_window");
+
+    jQuery(document).ready(function ($) {
+
+        $('#add_question').click(function () {
+            $('.theme-popover-mask').fadeIn(100);
+            $('.ques_window').slideDown(200);
+        })
+        $('.poptit .close').click(function () {
+            $('.theme-popover-mask').fadeOut(100);
+            $('.ques_window').slideUp(200);
         })
 
     })
