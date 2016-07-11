@@ -1129,136 +1129,13 @@ li {
 }
 
 //弹窗
+
 .ques_window {
-  z-index: 9999;
-  width: 50%;
-  min-width: 604px;
-  display: block;
-  background-color: #fff;
-  position: fixed;
-  top: 50%;
-  left: 25%;
-  margin: 0 auto;
-  margin-top: -200px;
-  box-shadow: 0 0 10px #666;
   display: none;
-  .poptit {
-    background-color: #f0f0f0;
-    height: 40px;
-    line-height: 40px;
-    position: relative;
-    margin-top: -14px;
-    padding-left: 10px;
-    .close {
-      float: right;
-      color: #999;
-      font-size: 36px;
-      display: block;
-      height: 40px;
-      width: 40px;
-      line-height: 34px;
-      text-align: center;
-      &:hover {
-        color: #fff;
-        background-color: red;
-      }
-
-    }
-    a {
-      color: $list-main-color;
-      font-size: $font-size-medium;
-      text-decoration: none;
-      display: block;
-    }
-
-  }
-
-  ul {
-    display: block;
-    margin: 10px auto;
-    padding: 10px 20px;
-    text-align: center;
-
-    li {
-      text-align: left;
-      height: 40px;
-      line-height: 40px;
-      @include border-bottom();
-      font-size: $font-size-big;
-      color: $text-color;
-      padding-left: 10px;
-      position: relative;
-      span {
-        color: red;
-        position: absolute;
-        top: 3px;
-      }
-      input {
-        margin-left: 10px;
-        padding-left: 10px;
-        border-radius: 2px;
-        box-shadow: none;
-        height: 24px;
-        width: 200px;
-        font-size: $font-size-medium;
-        @include border();
-      }
-      //设置placeholder的属性
-      // ::-webkit-input-placeholder{color:red;font-size:12px;}
-      //::-moz-placeholder{color:red;font-size:12px;}
-      // :-ms-input-placeholder{color:red;font-size:12px;}
-      // input:-moz-placeholder{color:red;font-size:12px;}
-      input:focus {
-        outline-color: #9aff97;
-      }
-    }
-
-    .content {
-      height: 120px;
-      display: block;
-      @include border-bottom();
-      font-size: $font-size-big;
-      color: $text-color;
-      padding-left: 10px;
-      position: relative;
-      div {
-        float: left;
-      }
-      textarea {
-        height: 100px;
-        float: left;
-        width: 80%;
-        margin: 10px 0;
-        margin-left: 16px;
-        padding-left: 10px;
-        border-radius: 2px;
-        font-size: $font-size-medium;
-        line-height: 26px;
-        @include border();
-      }
-      textarea:focus {
-        outline-color: #9aff97;
-      }
-    }
-  }
-
 }
-
-.theme-popover-mask {
-  z-index: 9998;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  opacity: 0.4;
-  filter: alpha(opacity=40);
-  display: none
-}
-
 .window-wrap {
   $tit-bg: #f0f0f0;
+  display: none;
   position: fixed;
   min-width: 40%;
   max-width: 60%;
@@ -1306,4 +1183,67 @@ li {
   z-index: 3;
   background-color: #000;
   @include opacity(0.3);
+}
+
+.form-group {
+  ul {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+
+    li {
+      text-align: left;
+      //@include border-bottom();
+      color: $text-color;
+      padding: 6px 0 6px 10px;
+      position: relative;
+      label {
+        vertical-align: top;
+        font-size: $font-size-medium;
+      }
+      span {
+        color: red;
+        vertical-align: top;
+      }
+      input, textarea {
+        margin-left: 10px;
+        padding-left: 3px;
+        border-radius: 2px;
+        box-shadow: none;
+        height: 24px;
+        width: 60%;
+        font-size: $font-size-medium;
+        @include border();
+      }
+      textarea {
+        height: 80px;
+        width: 70%;
+        line-height: 1.6em;
+      }
+      textarea:focus, input:focus {
+        border-color: #9aff97;
+      }
+      //设置placeholder的属性
+      // ::-webkit-input-placeholder{color:red;font-size:12px;}
+      //::-moz-placeholder{color:red;font-size:12px;}
+      // :-ms-input-placeholder{color:red;font-size:12px;}
+      // input:-moz-placeholder{color:red;font-size:12px;}
+
+    }
+
+    .content {
+      //height: 120px;
+      display: block;
+      //@include border-bottom();
+      font-size: $font-size-medium;
+      color: $text-color;
+      padding-left: 10px;
+      position: relative;
+      div {
+        float: left;
+      }
+
+    }
+  }
 }

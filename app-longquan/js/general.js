@@ -61,7 +61,7 @@ $(function () {
 
     //判断列表，为空则显示“暂无信息”
     var nolist_html = '<div class="nolist"><i class="fa fa-exclamation-circle"></i> 暂无信息</div>';
-    $(".tabmain .news-list ul:not(:has(li))").html(nolist_html);
+    $(".tabmain .news-list ul:not(:has(li)),.tabmain .news-list:not(:has(ul))").html(nolist_html);
 
 
     //焦点图
@@ -148,25 +148,21 @@ $(function () {
 })
 /*$(function){}*/
 
-/*
+
  //弹窗
  var window_html='<div class="window-wrap"><div class="window-head"><span class="window-tit"></span><a href="javascript:void(0)" class="window-colse"><i class="icon-win-close"></i></a></div><div class="window-main"></div></div><div class="mask"></div>';
  function hxb_window(tit,wrap){
- $(window_html).appendTo("body");
- var $window=$(".window-wrap");
-
- $(".window-tit").text(tit);
- $(wrap).clone().show().appendTo(".window-main");
-
- $window.css({marginTop:-$window.height()/2,marginLeft:-$window.width()/2});
-
-
-
- $(".window-colse").on('click', function () {
- $(".window-wrap,.mask").remove();
- });
+     $(window_html).appendTo("body").fadeIn(300);
+     var $window = $(".window-wrap");
+     $(".window-tit").text(tit);
+     $(wrap).clone().show().appendTo(".window-main");
+     $window.css({marginTop: -$window.height() / 2, marginLeft: -$window.width() / 2});
+     $(".window-colse").on('click', function () {
+         $(".window-wrap,.mask").fadeOut(300, function () {
+             this.remove();
+         })
+     });
 
 
  }
 
- */
