@@ -33,7 +33,7 @@ $blue: #5495c0;
 $gray: #666;
 //layout
 %main-wrap {
-  width: 1100px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -61,6 +61,21 @@ $gray: #666;
   float: right;
 }
 
+.font-size-normal {
+  font-style: $font-size-normal;
+}
+
+.font-size-medium {
+  font-style: $font-size-medium;
+}
+
+.font-size-big {
+  font-style: $font-size-big;
+}
+
+.font-size-lg {
+  font-style: $font-size-lg;
+}
 .main-wrap-mar-tb {
   @extend %main-wrap;
   margin-top: 15px;

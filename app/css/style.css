@@ -230,64 +230,8 @@ th {
   padding: 0;
 }
 
-.icon-sprite, .icon-blue_error, .icon-icon-baozhengjin, .icon-icon-bookmark, .icon-icon-building, .icon-icon-caigou, .icon-icon-clock, .icon-icon-tudi, .icon-win-close {
-  background-image: url('../images/icon-s6140f10d67.png');
-  background-repeat: no-repeat;
-}
-
-.icon-blue_error {
-  background-position: 0 0;
-  height: 80px;
-  width: 80px;
-}
-
-.icon-icon-baozhengjin {
-  background-position: 0 -100px;
-  height: 32px;
-  width: 32px;
-}
-
-.icon-icon-bookmark {
-  background-position: 0 -152px;
-  height: 32px;
-  width: 32px;
-}
-
-.icon-icon-building {
-  background-position: 0 -204px;
-  height: 32px;
-  width: 32px;
-}
-
-.icon-icon-caigou {
-  background-position: 0 -256px;
-  height: 32px;
-  width: 32px;
-}
-
-.icon-icon-clock {
-  background-position: 0 -308px;
-  height: 32px;
-  width: 32px;
-}
-
-.icon-icon-tudi {
-  background-position: 0 -360px;
-  height: 32px;
-  width: 32px;
-}
-
-.icon-win-close {
-  background-position: 0 -462px;
-  height: 30px;
-  width: 30px;
-}
-.icon-win-close:hover, .icon-win-close.win-close-hover {
-  background-position: 0 -412px;
-}
-
 .main-wrap-mar-tb, .banner-ad, .topbar, .banner-wrap .banner, .nav-wrap .nav, .main-wrap-mar-tb-qu {
-  width: 1100px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -321,6 +265,22 @@ th {
 
 .fr {
   float: right;
+}
+
+.font-size-normal {
+  font-style: 12px;
+}
+
+.font-size-medium {
+  font-style: 14px;
+}
+
+.font-size-big {
+  font-style: 16px;
+}
+
+.font-size-lg {
+  font-style: 18px;
 }
 
 .main-wrap-mar-tb {
@@ -536,7 +496,7 @@ li {
 .news-wrap .news-list li {
   padding-left: 12px;
   height: 32px;
-  background: url('../images/list-dot.gif?1466478484') no-repeat left center;
+  background: url('../images/list-dot.gif') no-repeat left center;
 }
 .news-wrap .news-list li a {
   line-height: 32px;
@@ -1172,7 +1132,7 @@ li {
 .list-paading .tab-ul li li {
   padding-left: 12px;
   height: 30px;
-  background: url('../images/list-dot.gif?1466478484') no-repeat left center;
+  background: url('../images/list-dot.gif') no-repeat left center;
 }
 .list-paading .tab-ul li li a {
   line-height: 30px;
