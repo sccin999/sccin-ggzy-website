@@ -121,6 +121,12 @@ form label, form .label label {
     font-size: $font-size-medium;
 }
 
+.form-group {
+    input, label {
+        vertical-align: middle;
+    }
+}
+
 .btn {
     border: none;
     background: $secondary-color;
@@ -298,6 +304,10 @@ li {
     vertical-align: middle;
 }
 
+.label.label-two-lines {
+    margin-top: -10px;
+    padding-top: 17px;
+}
 .reg-step-wrap {
     width: 1200px;
     margin: 0 auto 0;
@@ -323,7 +333,7 @@ li {
         background-color: $secondary-color;
     }
     .step-bar {
-        width: 25%;
+        width: 20%;
     }
     .step-point {
         width: 30px;
@@ -379,7 +389,7 @@ li {
     width: 940px;
     background-color: #fff;
     padding-bottom: 10px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
 }
 
 .tip.tips-style .tip-line {
@@ -411,7 +421,33 @@ li {
             color: $fourth-color;
         }
     }
+}
 
+//引导
+.guide-wrap {
+    padding: 20px 0;
+    text-align: center;
+    a {
+        display: block;
+        width: 40%;
+        @extend .f_mid;
+        margin: 15px auto;
+        text-align: left;
+        border: 1px solid $main-color;
+        border-radius: 5px;
+        @include transition(all 0.5s);
+        font-size: 1.3em;
+        padding: 20px 0 20px 80px;
+        i {
+            margin-right: 6px;
+        }
+        &:hover {
+            text-decoration: none;
+            @include box-shadow(0 0 6px rgba(0, 0, 0, 0.5));
+            background-color: $main-color;
+            color: #fff;
+        }
+    }
 }
 
 // 地区选择
