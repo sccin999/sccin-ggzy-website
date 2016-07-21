@@ -49,31 +49,30 @@
 <!-- end header -->
 
 <div class="reg-banner">
-    <div class="step reg-step-wrap">
-        <div class="step-bar active"><span class="step-point icon-check"></span><span class="step-text">用户注册</span>
-        </div>
-        <div class="step-bar"><span class="step-point">2</span><span class="step-text">法人基本信息</span></div>
-        <div class="step-bar"><span class="step-point">3</span><span class="step-text">扩展信息</span></div>
-        <div class="step-bar"><span class="step-point">4</span><span class="step-text">注册成功</span></div>
-    </div>
+
 </div>
 <div class="wrap-1200-mid">
     <!-- reg-box -->
-    <div class="reg-box-outer bg-white box-shadow-small">
+    <div class="reg-box-outer bg-white box-shadow-small" style="margin-top: -340px;">
         <div class="pop-window-inner" style=" padding:50px 30px;">
             <form method="post" class="form-x form-auto  margin-big-bottom registerform" onsubmit="return false;">
-                <h2 class="info-wrap-tit"><span>选择地区</span></h2>
-
-                <div class="info-wrap-area">
-                    <i class="fa fa-map-marker"></i><input type="text" id="info-area-input" value="点击选择地区">
-                </div>
-                <h2 class="info-wrap-tit"><span>选择角色</span></h2>
+                <h2 class="info-wrap-tit" style="padding-left: 15px"><span>选择角色 <em>请选择要申请的角色</em></span></h2>
 
                 <div class="info-wrap-role">
-                    <div class="role-box "><label for="role1"><i class="fa fa-user"></i>招标人</label><input id="role1"
-                                                                                                          type="radio"
-                                                                                                          name="user-role"
-                                                                                                          type="text">
+
+                    <div class="role-box"><label for="sccin_member"><i class="fa fa-user"></i>建设网会员</label><input
+                            id="sccin_member"
+                            type="radio"
+                            name="user-role"
+                            type="text">
+                    </div>
+
+
+                    <div class="role-box ">
+                        <label for="role1"><i class="fa fa-user"></i>招标人</label><input id="role1"
+                                                                                       type="radio"
+                                                                                       name="user-role"
+                                                                                       type="text">
                     </div>
                     <div class="role-box"><label for="role2"><i class="fa fa-user"></i>投标人</label><input id="role2"
                                                                                                          type="radio"
@@ -135,11 +134,7 @@
                                                                                                              name="user-role"
                                                                                                              type="text">
                     </div>
-                    <div class="role-box"><label for="role14"><i class="fa fa-user"></i>建设网会员</label><input id="role14"
-                                                                                                            type="radio"
-                                                                                                            name="user-role"
-                                                                                                            type="text">
-                    </div>
+
                     <div class="role-box"><label for="role15"><i class="fa fa-user"></i>监督部门</label><input id="role15"
                                                                                                            type="radio"
                                                                                                            name="user-role"
@@ -156,6 +151,13 @@
                                                                                                          type="text">
                     </div>
                 </div>
+
+                <h2 class="info-wrap-tit area-hide" style="padding-left: 15px;"><span>选择地区 <em>请选择所在地区</em></span></h2>
+
+                <div class="info-wrap-area area-hide">
+                    <i class="fa fa-map-marker"></i><input type="text" id="info-area-input" value="点击选择地区">
+                </div>
+
                 <div class="margin-big-top">
                     <button class="button f_mid bg-main  button-big button-block"
                             onclick="window.location.href='info-complete-base.html'" type="submit" style="width:307px">

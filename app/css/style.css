@@ -117,7 +117,6 @@ figure {
 }
 
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -190,8 +189,6 @@ input[type="number"]::-webkit-outer-spin-button {
 
 input[type="search"] {
   -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -430,7 +427,6 @@ li {
   white-space: nowrap;
   overflow: hidden;
   -ms-text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
 .msgbox li > a {
@@ -506,7 +502,6 @@ li {
   white-space: nowrap;
   overflow: hidden;
   -ms-text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
 .news-wrap .news-list li .list-status {
@@ -609,7 +604,6 @@ li {
   white-space: nowrap;
   overflow: hidden;
   -ms-text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   background: rgba(0, 0, 0, 0.5);
 }
@@ -721,7 +715,6 @@ li {
 }
 .system-btn-wrap a.system-btn:hover {
   border: 1px solid #b6e3bd;
-  -webkit-box-shadow: 2px 2px 2px rgba(62, 144, 74, 0.3);
   box-shadow: 2px 2px 2px rgba(62, 144, 74, 0.3);
 }
 .system-btn-wrap a.system-btn:hover .btn-icon {
@@ -1142,7 +1135,6 @@ li {
   white-space: nowrap;
   overflow: hidden;
   -ms-text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
 .list-paading .tab-ul li li span {
@@ -1256,7 +1248,6 @@ li {
   left: 50%;
   z-index: 4;
   background-color: #fff;
-  -webkit-box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
   box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
 }
 .window-wrap .window-tit {
@@ -1348,5 +1339,3 @@ li {
 .form-group ul .content div {
   float: left;
 }
-
-/*# sourceMappingURL=style.css.map */

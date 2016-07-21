@@ -40,7 +40,7 @@
         <div id="header" class="clearfix">
             <div class="logo fl">
                 <a href="index.html"><img src="images/logo.png" alt=""></a>
-                <span>用户注册</span>
+                <span>信息完善</span>
             </div>
             <a class="font-size-medium fr margin-big-top icon-home button " href="index.html"> 返回首页</a>
         </div>
@@ -50,14 +50,11 @@
 
 <div class="reg-banner">
     <div class="step reg-step-wrap">
-        <div class="step-bar active"><span class="step-point icon-check"></span><span class="step-text">用户注册</span>
+        <div class="step-bar "><span class="step-point">1</span><span class="step-text">基本信息</span>
         </div>
-        <div class="step-bar active"><span class="step-point icon-check"></span><span class="step-text">法人基本信息</span>
+        <div class="step-bar active"><span class="step-point icon-pencil"></span><span class="step-text">扩展信息</span>
         </div>
-        <div class="step-bar active"><span class="step-point icon-check"></span><span class="step-text">扩展信息</span>
-        </div>
-        <div class="step-bar"><span class="step-point">4</span><span class="step-text">证件上传</span></div>
-        <div class="step-bar"><span class="step-point">5</span><span class="step-text">注册成功</span></div>
+        <div class="step-bar"><span class="step-point">3</span><span class="step-text">附件上传</span></div>
     </div>
 </div>
 <div class="wrap-1200-mid">
@@ -288,14 +285,21 @@
 
                 <div class="fixed" data-style="fixed-bottom" data-offset-fixed="0">
                     <div class="form-button margin-top">
-                        <button class="button bg-main button-big tips" type="button" id="btn-save" style="width: 150px"
-                                data-toggle="hover" data-place="top" data-style="tips-style" title="保存数据，下次可继续完善信息。">保存
-                        </button>
+                        <a href="info-complete-base.html" class="button bg-main button-big tips text-center"
+                           id="btn-prev" type="button"
+                           style="width: 120px">上一步
+                        </a>
                         &nbsp;&nbsp;
-                        <button class="button bg-yellow button-big tips" id="btn-next" type="submit"
-                                style="width: 150px" data-toggle="hover" data-place="top" data-style="tips-style"
+                        <button class="button bg-main button-big tips" id="btn-next" type="submit"
+                                style="width: 120px" data-toggle="hover" data-place="top" data-style="tips-style"
                                 title="扩展信息填写完毕，下一步上传附件。">下一步
                         </button>
+                        &nbsp;&nbsp;
+                        <button class="button bg-yellow button-big tips" type="button" id="btn-save"
+                                style="width: 120px"
+                                data-toggle="hover" data-place="top" data-style="tips-style" title="保存数据，下次可继续完善信息。">保存
+                        </button>
+
                         <a href="info-complete-attachment.html">验证完成转到附件上传页面</a>
                     </div>
 
@@ -394,9 +398,7 @@
         elem: '#date-id'
     });
 
-
     $(function () {
-
 
         //$(".registerform").Validform();  //就这一行代码！;
         $(".registerform").Validform({
