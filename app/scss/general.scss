@@ -198,7 +198,12 @@ li {
     min-width: 36px
 }
 
+.icon-home {
+    display: none !important;
+}
+
 /* header */
+
 #header {
     padding: 15px 0;
     .logo {
@@ -311,6 +316,25 @@ li {
 .reg-step-wrap {
     width: 1200px;
     margin: 0 auto 0;
+    .step-bar:last-of-type {
+        border-radius: 0 5px 5px 0;
+    }
+    a.guide-menu {
+        padding: 6px 10px;
+        background-color: #fff;
+        font-size: $font-size-medium;
+        border-radius: 5px;
+        position: absolute;
+        right: 0;
+        top: -40px;
+        &:hover {
+            background-color: #f0f0f0;
+            text-decoration: none;
+        }
+        i {
+            margin-right: 6px;
+        }
+    }
     .step-text {
         color: #fff;
         font-size: $font-size-lg;
@@ -329,11 +353,11 @@ li {
 }
 
 .step {
-    .active, .active .step-point {
-        background-color: $fourth-color;
-    }
+    $step-color: #f0f0f0;
+    $active-color: $third-color;
     .step-bar {
-        width: 33.33333%;
+        width: 25%;
+        background-color: $step-color;
     }
     .step-point {
         width: 30px;
@@ -341,6 +365,58 @@ li {
         line-height: 30px;
         top: -10px;
         font-size: $font-size-big;
+        @include box-shadow(none);
+        background-color: $step-color;
+        color: #666;
+    }
+    .active.step-point {
+        background-color: $active-color;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        top: -15px;
+        font-size: $font-size-lg;
+        color: lighten($active-color, 30%);
+    }
+}
+
+//注册-箭头流程
+.reg-step-arrow-wrap {
+    $step-height: 32px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    height: $step-height;
+    .step-arrow-bar {
+        width: 25%;
+        float: left;
+        height: $step-height;
+        line-height: $step-height;
+        font-size: $font-size-medium;
+        background: url('../images/step-arrow-bg.png') 0 -128px no-repeat;
+        text-align: center;
+        &.step-arrow-finished {
+            background-position: 0 -32px;
+            color: #fff;
+        }
+        &.step-arrow-finished.step-arrow-first {
+            background-position: 0 0;
+        }
+        &.step-arrow-finished.step-arrow-last {
+            background-position: 0 -64px;
+        }
+        &.step-arrow-first {
+            background-position: 0 0;
+        }
+        &.step-arrow-last {
+            background-position: 0 -160px;
+        }
+        .step-arrow-point {
+
+        }
+        .step-arrow-text {
+
+        }
     }
 }
 
@@ -455,7 +531,7 @@ li {
             color: $fourth-color; //已完成颜色
         }
     }
-    a {
+    & .guide-item > a {
         display: block;
         text-align: left;
         border: 1px solid $main-color;
@@ -558,7 +634,7 @@ li {
     @include legacy-pie-clearfix;
     .role-box {
         width: 18%;
-        margin: 10px 1%;
+        margin: 0px 1%;
         float: left;
         label {
             border: 2px solid #ccc;
@@ -597,7 +673,10 @@ li {
             }
         }
         input {
-            display: none;
+            //display: none;
+            width: 0;
+            height: 0;
+
         }
     }
 }
@@ -687,6 +766,7 @@ li {
     right: 15px;
     z-index: 999;
     li {
+        @include legacy-pie-clearfix;
         a {
             height: 50px;
             width: 50px;
@@ -697,6 +777,7 @@ li {
             border-radius: 50%;
             cursor: pointer;
             text-align: center;
+            margin-bottom: 4px;
             &:hover {
                 background-color: lighten($secondary-color, 5%);
             }
@@ -705,8 +786,56 @@ li {
                 line-height: 50px;
                 color: #fff;
             }
-
         }
+
+        a.guide-menu {
+            background-color: $main-color;
+            &:hover {
+                background-color: lighten($main-color, 5%);
+            }
+            span {
+                color: #fff;
+                font-size: 14px;
+                text-align: center;
+                padding-top: 5px;
+                display: block;
+            }
+            i {
+                font-size: 20px;
+                line-height: 50px;
+                color: #fff;
+            }
+        }
+
     }
 }
 
+//重置pintuer css
+.form-x .form-group .label {
+    float: left;
+    width: 15%;
+    text-align: right;
+    padding: 7px 7px 7px 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.form-x .form-group .field {
+    float: left;
+    width: 85%;
+}
+
+.form-auto .input {
+    width: auto;
+    display: inline-block;
+}
+
+.form-x .form-button {
+    margin-left: 15%;
+}
+
+.input[type='checkbox'], .input[type='radio'] {
+    border: none;
+    box-shadow: none;
+}

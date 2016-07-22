@@ -51,18 +51,28 @@
 
 <div class="reg-banner">
     <div class="step reg-step-wrap">
-        <div class="step-bar"><span class="step-point icon-pencil"></span><span class="step-text">基本信息</span>
+        <div class="step-bar"><span class="step-point">1</span><span class="step-text">角色地区选择</span>
         </div>
-        <div class="step-bar"><span class="step-point">2</span><span class="step-text">扩展信息</span></div>
-        <div class="step-bar"><span class="step-point">3</span><span class="step-text">附件上传</span></div>
+        <div class="step-bar"><span class="step-point active icon-pencil"></span><span class="step-text">基本信息</span>
+        </div>
+        <div class="step-bar"><span class="step-point">3</span><span class="step-text">扩展信息</span></div>
+        <div class="step-bar"><span class="step-point">4</span><span class="step-text">附件上传</span></div>
+        <a class="guide-menu" href="info-complete-guide.html">
+            <i class="fa fa-bars"></i><span>返回导航</span>
+        </a>
     </div>
+    <!--<div class="reg-step-arrow-wrap">
+        <div class="step-arrow-bar step-arrow-finished step-arrow-first"><span class="step-arrow-point">1</span><span class="step-arrow-text">角色地区选择</span>
+        </div>
+        <div class="step-arrow-bar step-arrow-finished"><span class="step-arrow-point">2</span><span class="step-arrow-text">基本信息</span>
+        </div>
+        <div class="step-arrow-bar"><span class="step-arrow-point">3</span><span class="step-arrow-text">扩展信息</span></div>
+        <div class="step-arrow-bar step-arrow-last "><span class="step-arrow-point">4</span><span class="step-arrow-text">附件上传</span></div>
+    </div>-->
 </div>
 <div class="wrap-1200-mid">
     <!-- reg-box -->
     <div class="reg-box-outer bg-white box-shadow-small" style="position: relative">
-        <div style="position: fixed;width: 50px;height: 500px; border: 1px solid #000; left: -30px;top: 0;">
-            <a href="#" class="guide-menu" style="position:fixed;left:-30px;top: 0; width: 50px">返回菜单</a>
-        </div>
         <div class="pop-window-inner" style=" padding:50px 30px;">
             <form method="post" class="form-x form-auto  margin-big-bottom registerform" onsubmit="return false;">
                 <div class="form-group">
@@ -257,27 +267,21 @@
                         <span class="Validform_checktip">(非必填项)</span></div>
                 </div>
 
-                <div class="form-group">
-                    <div class="label">
-                        <label>验证码:&nbsp;&nbsp;</label>
-                    </div>
-                    <div class="field">
-                        <input type="text" size="15" class="input" id="yanzhengma" datatype="*">
-                        <span class="yzm-wrap"> <img src="images/yzm.png" width="103" height="39" alt=""/> </span></div>
-                </div>
+
 
                 <div class="fixed" data-style="fixed-bottom" data-offset-fixed="0">
                     <div class="form-button margin-top">
-
-                        <button class="button bg-main button-big tips" id="btn-next" type="submit"
-                                style="width: 120px" data-toggle="hover" data-place="top" data-style="tips-style"
-                                title="基本信息填写完毕，下一步填写扩展信息。">下一步
+                        <a href="info-complete-area&role.html" class="button bg-main button-big tips text-center"
+                           id="btn-prev" type="button"
+                           style="width: 120px">上一步
+                        </a>
+                        &nbsp;&nbsp;
+                        <button class="button bg-yellow button-big tips" id="btn-next" type="submit"
+                                style="width: 160px" data-toggle="hover" data-place="top" data-style="tips-style"
+                                title="基本信息填写完毕，下一步填写扩展信息。">保存并下一步
                         </button>
                         &nbsp;&nbsp;
-                        <button class="button bg-yellow button-big tips" type="button" id="btn-save"
-                                style="width: 120px"
-                                data-toggle="hover" data-place="top" data-style="tips-style" title="保存数据，下次可继续完善信息。">保存
-                        </button>
+
                         <a href="info-complete-extend.html">验证完成转到扩展信息</a>
                     </div>
 
@@ -344,6 +348,7 @@
 <!-- 在线客服 -->
 <div id="leftsead">
     <ul>
+
         <li>
             <a id="top_btn">
                 <i class="fa fa-angle-up"></i>
@@ -361,8 +366,6 @@
 <!--[if lt IE 9]>
 <script src="js/jquery1.10.js"></script>
 <script src="js/modernizr.js"></script>
-<script src="js/respond.js"></script>
-<script src="js/amazeui.ie8polyfill.min.js"></script>
 <![endif]-->
 <!-- respond.js 需在服务器才支持ie7,8 | 不支持内嵌style | 放在css之后 | 不要为CSS设置utf-8编码 -->
 <script src="js/Validform_v5.3.2_min.js"></script>

@@ -50,14 +50,25 @@
 
 <div class="reg-banner">
     <div class="step reg-step-wrap">
-        <div class="step reg-step-wrap">
-            <div class="step-bar "><span class="step-point">1</span><span class="step-text">基本信息</span>
-            </div>
-            <div class="step-bar"><span class="step-point">2</span><span class="step-text">扩展信息</span></div>
-            <div class="step-bar active"><span class="step-point icon-pencil"></span><span class="step-text">附件上传</span>
-            </div>
+        <div class="step-bar"><span class="step-point">1</span><span class="step-text">角色地区选择</span>
         </div>
+        <div class="step-bar"><span class="step-point">2</span><span class="step-text">基本信息</span>
+        </div>
+        <div class="step-bar"><span class="step-point">3</span><span class="step-text">扩展信息</span></div>
+        <div class="step-bar"><span class="step-point active icon-pencil"></span><span class="step-text">附件上传</span>
+        </div>
+        <a class="guide-menu" href="info-complete-guide.html">
+            <i class="fa fa-bars"></i><span>返回导航</span>
+        </a>
     </div>
+    <!--<div class="reg-step-arrow-wrap">
+        <div class="step-arrow-bar step-arrow-finished step-arrow-first"><span class="step-arrow-point">1</span><span class="step-arrow-text">角色地区选择</span>
+        </div>
+        <div class="step-arrow-bar step-arrow-finished"><span class="step-arrow-point">2</span><span class="step-arrow-text">基本信息</span>
+        </div>
+        <div class="step-arrow-bar step-arrow-finished"><span class="step-arrow-point">3</span><span class="step-arrow-text">扩展信息</span></div>
+        <div class="step-arrow-bar step-arrow-last step-arrow-finished"><span class="step-arrow-point">4</span><span class="step-arrow-text">附件上传</span></div>
+    </div>-->
 </div>
 <div class="wrap-1200-mid">
     <!-- reg-box -->
@@ -166,14 +177,10 @@
                            style="width: 120px">上一步
                         </a>
                         &nbsp;&nbsp;
-                        <button class="button bg-yellow button-big tips" type="button" id="btn-save"
-                                style="width: 120px"
-                                data-toggle="hover" data-place="top" data-style="tips-style" title="保存数据，下次可继续完善信息。">保存
-                        </button>
-                        &nbsp;&nbsp;
+
                         <button class="button bg-yellow button-big tips" id="btn-submit" type="submit"
                                 style="width: 120px" data-toggle="hover" data-place="top" data-style="tips-style"
-                                title="数据全部填写完毕，提交审核。">提交
+                                title="数据全部填写完毕，提交审核。">提交审核
                         </button>
                         <a href="status-submit-success.html">提交成功转向页面</a>
                     </div>
@@ -242,6 +249,11 @@
 <div id="leftsead">
     <ul>
         <li>
+            <a class="guide-menu" href="info-complete-guide.html">
+                <span>返回<br>导航</span>
+            </a>
+        </li>
+        <li>
             <a id="top_btn">
                 <i class="fa fa-angle-up"></i>
             </a>
@@ -258,8 +270,6 @@
 <!--[if lt IE 9]>
 <script src="js/jquery1.10.js"></script>
 <script src="js/modernizr.js"></script>
-<script src="js/respond.js"></script>
-<script src="js/amazeui.ie8polyfill.min.js"></script>
 <![endif]-->
 <!-- respond.js 需在服务器才支持ie7,8 | 不支持内嵌style | 放在css之后 | 不要为CSS设置utf-8编码 -->
 <script src="js/Validform_v5.3.2_min.js"></script>
