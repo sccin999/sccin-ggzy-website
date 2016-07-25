@@ -1,0 +1,141 @@
+$btn01-color: #8c9eff;
+$btn02-color: #536dfe;
+$font-size-base: 12px;
+$font-size-medium: 14px;
+$font-size-big: 16px;
+$usable-color: #37ae37;
+$un-usable-color: #979797;
+$warn-color: #ff5722;
+
+.bg-white {
+  position: relative;
+}
+
+.add01 {
+  float: right;
+  width: 96px;
+  height: 32px;
+  background-color: $btn01-color;
+  border-radius: 4px;
+  color: #fff;
+  line-height: 32px;
+  font-size: $font-size-medium;
+  background-image: url("../images/add01.png");
+  background-repeat: no-repeat;
+  background-position: 10px 8px;
+  padding-left: 30px;
+  position: absolute;
+  top: 45px;
+  right: 40px;
+  &:hover {
+    background-color: lighten($btn01-color, 5%);
+  }
+}
+
+.guide-wrap {
+  padding: 55px 27px;
+  .div-wrap {
+    width: 202px;
+    height: 203px;
+    display: block;
+    background-color: red;
+    float: left;
+    position: relative;
+    margin-bottom: 30px;
+    margin-left: 70px;
+    text-align: center;
+    .tit {
+      position: absolute;
+      top: 73px;
+      left: 0;
+      width: 202px;
+      height: 66px;
+      color: #fff;
+      font-size: $font-size-big;
+      margin: 10px auto;
+      text-decoration: none;
+      cursor: default;
+
+    }
+
+    .shade {
+      float: left;
+      width: 202px;
+      height: 203px;
+      display: block;
+      background-color: rgba(255, 255, 255, 0);
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+    em {
+      position: absolute;
+      top: 154px;
+      left: 10px;
+      width: 202px;
+
+      i.fa {
+        font-size: $font-size-big;
+        float: left;
+        position: absolute;
+        left: 0px;
+        top: 4px;
+      }
+      span {
+        font-size: $font-size-big;
+        float: left;
+        margin-left: 22px;
+      }
+      a {
+        display: block;
+        font-size: $font-size-base;
+        position: absolute;
+        right: 20px;
+        top: 3px;
+        cursor: pointer;
+      }
+    }
+    .usable-color {
+      color: $usable-color; //已完成颜色
+    }
+    .un-usable-color {
+      color: $un-usable-color; //未完成颜色
+    }
+    .warn-color {
+      color: $warn-color; //warning颜色
+    }
+  }
+  .usable-Bg {
+    background: url("../images/bg01.png") no-repeat;
+  }
+  .un-usable-Bg {
+    background: url("../images/bg02.png") no-repeat;
+  }
+
+  .row {
+    width: 100%;
+    margin: 0px auto;
+    margin-top: 30px;
+    float: left;
+    .add02 {
+      width: 200px;
+      height: 60px;
+      margin: 0 auto;
+      background-color: $btn02-color;
+      border-radius: 6px;
+      color: #fff;
+      line-height: 60px;
+      font-size: $font-size-big;
+      background-image: url("../images/add02.png");
+      background-repeat: no-repeat;
+      background-position: 50px 20px;
+      padding-left: 20px;
+      cursor: default;
+
+      &:hover {
+        background-color: lighten($btn02-color, 5%);
+      }
+    }
+  }
+
+}
