@@ -45,17 +45,15 @@ $warn-color: #ff5722;
     margin-left: 70px;
     text-align: center;
     .tit {
-      position: absolute;
-      top: 73px;
       left: 0;
       width: 202px;
-      height: 66px;
+      height: 140px;
       color: #fff;
       font-size: $font-size-big;
       margin: 10px auto;
       text-decoration: none;
       cursor: default;
-
+      background-color: #00aabb;
     }
 
     .shade {
