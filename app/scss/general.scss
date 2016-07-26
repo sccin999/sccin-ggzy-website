@@ -395,9 +395,15 @@ li {
         font-size: $font-size-medium;
         background: url('../images/step-arrow-bg.png') 0 -128px no-repeat;
         text-align: center;
+        i.fa {
+            display: none;
+        }
         &.step-arrow-finished {
             background-position: 0 -32px;
             color: #fff;
+            .step-arrow-point {
+                font-size: 14px;
+            }
         }
         &.step-arrow-finished.step-arrow-first {
             background-position: 0 0;
@@ -405,15 +411,24 @@ li {
         &.step-arrow-finished.step-arrow-last {
             background-position: 0 -64px;
         }
+        &.step-arrow-active {
+            font-size: $font-size-lg;
+            .step-arrow-point {
+                font-size: 14px;
+                margin-right: 10px;
+                display: inline-block;
+                i.fa {
+                    display: inline-block;
+                }
+            }
+        }
         &.step-arrow-first {
             background-position: 0 0;
         }
         &.step-arrow-last {
             background-position: 0 -160px;
         }
-        .step-arrow-point {
 
-        }
         .step-arrow-text {
 
         }

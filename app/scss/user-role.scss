@@ -29,6 +29,8 @@ $warn-color: #ff5722;
   right: 40px;
   &:hover {
     background-color: lighten($btn01-color, 5%);
+    color: #fff;
+    text-decoration: none;
   }
 }
 
@@ -53,7 +55,6 @@ $warn-color: #ff5722;
       font-size: $font-size-big;
       margin: 0px auto;
       text-decoration: none;
-      cursor: default;
       background-color: rgba(255, 255, 255, 0);
       &:hover {
         background-color: rgba(255, 255, 255, 0.2);
@@ -74,7 +75,8 @@ $warn-color: #ff5722;
         top: 4px;
       }
       span {
-        font-size: $font-size-big;
+        font-size: $font-size-medium;
+        padding-top: 1px;
         float: left;
         margin-left: 22px;
       }
@@ -110,6 +112,7 @@ $warn-color: #ff5722;
     margin-top: 30px;
     float: left;
     .add02 {
+      display: block;
       width: 200px;
       height: 60px;
       margin: 0 auto;
@@ -122,10 +125,10 @@ $warn-color: #ff5722;
       background-repeat: no-repeat;
       background-position: 50px 20px;
       padding-left: 20px;
-      cursor: default;
 
       &:hover {
         background-color: lighten($btn02-color, 5%);
+        text-decoration: none;
       }
     }
   }
