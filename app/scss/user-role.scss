@@ -45,27 +45,21 @@ $warn-color: #ff5722;
     margin-left: 70px;
     text-align: center;
     .tit {
-      left: 0;
       width: 202px;
       height: 140px;
+      display: block;
+      padding-top: 84px;
       color: #fff;
       font-size: $font-size-big;
-      margin: 10px auto;
+      margin: 0px auto;
       text-decoration: none;
       cursor: default;
-      background-color: #00aabb;
-    }
-
-    .shade {
-      float: left;
-      width: 202px;
-      height: 203px;
-      display: block;
       background-color: rgba(255, 255, 255, 0);
       &:hover {
         background-color: rgba(255, 255, 255, 0.2);
       }
     }
+
     em {
       position: absolute;
       top: 154px;

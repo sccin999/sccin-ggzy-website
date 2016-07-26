@@ -1,144 +1,121 @@
 .bg-white {
-    position: relative;
+  position: relative;
 }
 
 .add01 {
-    float: right;
-    width: 96px;
-    height: 32px;
-    background-color: #8c9eff;
-    border-radius: 4px;
-    color: #fff;
-    line-height: 32px;
-    font-size: 14px;
-    background-image: url("../images/add01.png");
-    background-repeat: no-repeat;
-    background-position: 10px 8px;
-    padding-left: 30px;
-    position: absolute;
-    top: 45px;
-    right: 40px;
+  float: right;
+  width: 96px;
+  height: 32px;
+  background-color: #8c9eff;
+  border-radius: 4px;
+  color: #fff;
+  line-height: 32px;
+  font-size: 14px;
+  background-image: url("../images/add01.png");
+  background-repeat: no-repeat;
+  background-position: 10px 8px;
+  padding-left: 30px;
+  position: absolute;
+  top: 45px;
+  right: 40px;
 }
-
 .add01:hover {
-    background-color: #a6b4ff;
+  background-color: #a6b4ff;
 }
 
 .guide-wrap {
-    padding: 55px 27px;
+  padding: 55px 27px;
 }
-
 .guide-wrap .div-wrap {
-    width: 202px;
-    height: 203px;
-    display: block;
-    background-color: red;
-    float: left;
-    position: relative;
-    margin-bottom: 30px;
-    margin-left: 70px;
-    text-align: center;
+  width: 202px;
+  height: 203px;
+  display: block;
+  background-color: red;
+  float: left;
+  position: relative;
+  margin-bottom: 30px;
+  margin-left: 70px;
+  text-align: center;
 }
-
 .guide-wrap .div-wrap .tit {
-    left: 0;
-    width: 202px;
-    height: 140px;
-    color: #fff;
-    font-size: 16px;
-    margin: 10px auto;
-    text-decoration: none;
-    cursor: default;
-    background-color: #00aabb;
+  width: 202px;
+  height: 140px;
+  display: block;
+  padding-top: 84px;
+  color: #fff;
+  font-size: 16px;
+  margin: 0px auto;
+  text-decoration: none;
+  cursor: default;
+  background-color: rgba(255, 255, 255, 0);
 }
-
-.guide-wrap .div-wrap .shade {
-    float: left;
-    width: 202px;
-    height: 203px;
-    display: block;
-    background-color: rgba(255, 255, 255, 0);
+.guide-wrap .div-wrap .tit:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
-
-.guide-wrap .div-wrap .shade:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
 .guide-wrap .div-wrap em {
-    position: absolute;
-    top: 154px;
-    left: 10px;
-    width: 202px;
+  position: absolute;
+  top: 154px;
+  left: 10px;
+  width: 202px;
 }
-
 .guide-wrap .div-wrap em i.fa {
-    font-size: 16px;
-    float: left;
-    position: absolute;
-    left: 0px;
-    top: 4px;
+  font-size: 16px;
+  float: left;
+  position: absolute;
+  left: 0px;
+  top: 4px;
 }
-
 .guide-wrap .div-wrap em span {
-    font-size: 16px;
-    float: left;
-    margin-left: 22px;
+  font-size: 16px;
+  float: left;
+  margin-left: 22px;
 }
-
 .guide-wrap .div-wrap em a {
-    display: block;
-    font-size: 12px;
-    position: absolute;
-    right: 20px;
-    top: 3px;
-    cursor: pointer;
+  display: block;
+  font-size: 12px;
+  position: absolute;
+  right: 20px;
+  top: 3px;
+  cursor: pointer;
 }
-
 .guide-wrap .div-wrap .usable-color {
-    color: #37ae37;
+  color: #37ae37;
 }
-
 .guide-wrap .div-wrap .un-usable-color {
-    color: #979797;
+  color: #979797;
 }
-
 .guide-wrap .div-wrap .warn-color {
-    color: #ff5722;
+  color: #ff5722;
 }
-
 .guide-wrap .usable-Bg {
-    background: url("../images/bg01.png") no-repeat;
+  background: url("../images/bg01.png") no-repeat;
 }
-
 .guide-wrap .un-usable-Bg {
-    background: url("../images/bg02.png") no-repeat;
+  background: url("../images/bg02.png") no-repeat;
 }
-
 .guide-wrap .row {
-    width: 100%;
-    margin: 0px auto;
-    margin-top: 30px;
-    float: left;
+  width: 100%;
+  margin: 0px auto;
+  margin-top: 30px;
+  float: left;
 }
-
 .guide-wrap .row .add02 {
-    width: 200px;
-    height: 60px;
-    margin: 0 auto;
-    background-color: #536dfe;
-    border-radius: 6px;
-    color: #fff;
-    line-height: 60px;
-    font-size: 16px;
-    background-image: url("../images/add02.png");
-    background-repeat: no-repeat;
-    background-position: 50px 20px;
-    padding-left: 20px;
-    cursor: default;
+  width: 200px;
+  height: 60px;
+  margin: 0 auto;
+  background-color: #536dfe;
+  border-radius: 6px;
+  color: #fff;
+  line-height: 60px;
+  font-size: 16px;
+  background-image: url("../images/add02.png");
+  background-repeat: no-repeat;
+  background-position: 50px 20px;
+  padding-left: 20px;
+  cursor: default;
 }
-
 .guide-wrap .row .add02:hover {
-    background-color: #6c83fe;
+  background-color: #6c83fe;
 }
 
 /*# sourceMappingURL=user-role.css.map */
