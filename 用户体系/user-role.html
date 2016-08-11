@@ -74,20 +74,22 @@
                     <em class="usable-color"> <i class="fa  fa-check-circle"></i><span>状态正常</span> <a>申请修改</a> </em>
 
                 </div>
-                <div class="div-wrap usable-Bg">
-                    <a class="tit" href="info-complete-guide.html">达州地区<br>投标人</a>
-                    <em class="usable-color"> <i class="fa  fa-check-circle"></i><span>状态正常</span> <a>申请修改</a> </em>
 
-                </div>
                 <div class="div-wrap un-usable-Bg">
-                    <a class="tit" href="info-complete-guide.html">新疆维吾尔自治区<br>投标人</a>
-                    <em class="warn-color"> <i class="fa fa-close"></i><span>审核未通过</span> </em>
+                    <a class="tit" href="info-complete-guide.html">四川巴中地区<br>招标代理机构</a>
+                    <a href="status-submit-success.html" class="button bg-yellow button-block margin-top">提交审核</a>
                 </div>
 
                 <div class="div-wrap un-usable-Bg">
                     <a class="tit" href="info-complete-guide.html">四川巴中地区<br>招标代理机构</a>
                     <em class="un-usable-color"> <i class="fa fa-spinner rotate"></i><span>待审核</span> </em>
                 </div>
+
+                <div class="div-wrap un-usable-Bg">
+                    <a class="tit" href="info-complete-guide.html">新疆维吾尔自治区<br>投标人</a>
+                    <em class="warn-color"> <i class="fa fa-close"></i><span>审核未通过</span> </em>
+                </div>
+
 
                 <div class="div-wrap un-usable-Bg">
                     <a class="tit" href="info-complete-guide.html">四川巴中地区<br>招标代理机构</a>
@@ -176,13 +178,9 @@
 <script src="js/modernizr.js"></script>
 <![endif]-->
 <!-- respond.js 需在服务器才支持ie7,8 | 不支持内嵌style | 放在css之后 | 不要为CSS设置utf-8编码 -->
-<script src="js/Validform_v5.3.2_min.js"></script>
 <script src="js/pintuer.js"></script>
 <script src="js/layer/layer.js"></script>
 <script src="js/common-website.js"></script>
-<script src="js/Popt.js"></script>
-<script src="js/cityJson.js"></script>
-<script src="js/citySet.js"></script>
 <script type="text/javascript">
     $("#info-area-input").click(function (e) {
         SelCity(this, e);
@@ -190,26 +188,17 @@
 </script>
 <script type="text/javascript">
     $(function () {
-        //协议弹窗
-        $("#privacy").click(function (e) {
-            layer.open({
-                type: 1,
-                skin: 'layui-layer-rim', //加上边框
-                title: ['网站服务协议', 'font-size:18px; height:55px; padding-top:5px'],
-                area: ['50%', '70%'], //宽高
-                shift: 0,  //动画0-6
-                move: false,
-                content: $('#agreement')
+        $('.div-wrap ').on('mouseover', 'a.button', function () {
+            layer.tips('角色信息填报完成，请点击按钮提交审核。', this, {
+                tips: [2, '#6692ff'],
+                time: 4000
             });
         });
-        $("#agree_btn").click(function (e) {
-            layer.closeAll();
-        });
 
-        //$(".registerform").Validform();  //就这一行代码！;
-        $(".registerform").Validform({
-            tiptype: 3
-        });
+        $(window).on('load', function () {
+            $(".div-wrap a.button").trigger("mouseover");
+        })
+
 
 
     })

@@ -356,7 +356,7 @@ li {
     $step-color: #f0f0f0;
     $active-color: $third-color;
     .step-bar {
-        width: 25%;
+        width: 16.6666666%;
         background-color: $step-color;
     }
     .step-point {
@@ -388,7 +388,7 @@ li {
     margin-right: auto;
     height: $step-height;
     .step-arrow-bar {
-        width: 25%;
+        width: 200px; //单步宽度
         float: left;
         height: $step-height;
         line-height: $step-height;
@@ -412,7 +412,7 @@ li {
             background-position: 0 -64px;
         }
         &.step-arrow-active {
-            font-size: $font-size-lg;
+            font-size: $font-size-big;
             .step-arrow-point {
                 font-size: 14px;
                 margin-right: 10px;
@@ -853,4 +853,19 @@ li {
 .input[type='checkbox'], .input[type='radio'] {
     border: none;
     box-shadow: none;
+}
+
+//table
+table {
+    margin-top: 10px;
+    position: relative;
+    top: 5px;
+    td, th {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+        padding: 3px 8px;
+        a {
+            color: blue;
+        }
+    }
 }

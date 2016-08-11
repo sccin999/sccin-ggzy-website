@@ -9,16 +9,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <link rel="icon" type="image/png" href="assets/i/favicon.png"/>
-    <link rel="stylesheet" href="css/pintuer.css"/>
+    <link rel="stylesheet" href="css/pintuer.css">
+
     <link rel="stylesheet" href="css/font-awesome.css"/>
     <!-- build:mincss css/style.min.css -->
     <link rel="stylesheet" href="css/general.css"/>
     <!-- endbuild -->
-
+    <link rel="stylesheet" href="css/Validform-style.css">
     <title>用户体系-四川建设网</title>
 </head>
 
-<body>
+<body class="bg-gray">
 <!-- topbar -->
 <div class="topbar">
     <div class="wrap-1200-mid">
@@ -40,7 +41,6 @@
         <div id="header" class="clearfix">
             <div class="logo fl">
                 <a href="index.html"><img src="images/logo.png" alt=""></a>
-                <span>用户登录</span>
             </div>
             <a class="font-size-medium fr margin-big-top icon-home button " href="index.html"> 返回首页</a>
         </div>
@@ -48,65 +48,44 @@
 </div>
 <!-- end header -->
 
+<div class="reg-banner">
 
-<!-- login-banner -->
-<div class="login-banner">
-    <div class="wrap-1200-mid" style="padding-top:60px">
-        <!-- login-box -->
-        <div class="login-box-outer bg-white">
-            <div class="pop-window-head">
-                <h1 class="fl font-size-lg padding-big-left">登录</h1>
-                <a href="reg.html">立即注册</a>
-            </div>
-            <div class="pop-window-inner" style="width:463px; background:#fff; padding-left:30px;">
-                <form method="post" class="form-x form-auto form-tips margin-big-bottom" onsubmit="return false;">
-                    <div class="form-group">
-                        <div class="label">
-                            <label for="username">账号:&nbsp;&nbsp;</label>
-                        </div>
-                        <div class="field">
-                            <input type="text" class="input input-auto" size="40" data-validate="required:必填"
-                                   id="username" name="username" placeholder="请输入账号">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="label">
-                            <label for="password">密码:&nbsp;&nbsp;</label>
-                        </div>
-                        <div class="field">
-                            <input type="password" class="input" id="password" size="40" data-validate="required:必填"
-                                   name="password" placeholder="请输入密码">
-                            <!--<div class="input-note">登录会员的密码口令。</div>-->
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="label">
-                            <label>验证码:&nbsp;&nbsp;</label>
-                        </div>
-                        <div class="field">
-                            <input type="text" size="15" class="input" id="yanzhengma" data-validate="required:必填"
-                                   name="yanzhengma" placeholder="">
-                        <span class="yzm-wrap">
-                            <img src="images/yzm.png" width="103" height="39" alt=""/>
-                        </span>
-                        </div>
-                    </div>
-                    <div class="form-button margin-big-top">
-                        <button class="button bg-main button-big button-block" type="submit" style="width:307px">登录
-                        </button>
-                        <a href="user-role.html">登录成功跳转</a>
-                    </div>
-                    <div class="pop-tip">
-                        <span class="text-dot"><span class="icon-exclamation-circle"></span> 账号或密码错误</span>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <!-- end login-box -->
-    </div>
 </div>
-<!-- end login-banner -->
+<div class="wrap-1200-mid">
+    <!-- reg-box -->
+    <div class="reg-box-outer bg-white box-shadow-small " style="margin-top: -320px;">
+        <div class="pop-window-inner clearfix" style=" padding:50px 30px;">
+            <a href="user-role.html" class="fl button "><i class="fa fa-user"></i> 返回角色选择页面</a>
+            <a href="status-submit-success.html" class="fr button bg-yellow">提交审核</a>
 
+            <h1 class="font-size-big text-center">请完善以下信息：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+            <div class="guide-wrap">
+                <div class="guide-item">
+                    <a href="info-complete-area&role.html"><i class="fa fa-user"></i>选择地区和角色</a>
+                    <em class="guide-list-completed"><i class="fa fa-check"></i><span>已完成</span></em>
+                </div>
+                <div class="guide-item">
+                    <a href="info-complete-base.html"><i class="fa fa-pencil"></i>法人基本信息</a>
+                    <em class="guide-list-completed"><i class="fa fa-check"></i><span>已完成</span></em>
+                </div>
+                <div class="guide-item">
+                    <a href="info-complete-extend.html"><i class="fa fa-pencil-square-o"></i>角色扩展信息</a>
+                    <em class="d"><i class="fa fa-warning"></i><span>未完成</span></em>
+                </div>
+                <div class="guide-item">
+                    <a href="info-complete-attachment.html"><i class="fa fa-file-archive-o"></i>证件/附件上传</a>
+                    <em class="d"><i class="fa fa-warning"></i><span>未完成</span></em>
+                </div>
+                <!--<div class="form-button margin-big-top">
+                    <button class="button bg-yellow button-big " type="submit" style="width: 300px;">提交</button>
+                </div>-->
+            </div>
+
+
+        </div>
+    </div>
+    <!-- end login-box -->
+</div>
 
 <!-- foot -->
 <div class="foot clearfix padding-big margin-little-top">
@@ -173,8 +152,6 @@
 <!-- end 在线客服 -->
 
 </body>
-
-
 <!--[if (gte IE 9)|!(IE)]><!-->
 <script src="js/jquery2.1.4.min.js"></script>
 <!--<![endif]-->
@@ -184,8 +161,41 @@
 <script src="js/modernizr.js"></script>
 <![endif]-->
 <!-- respond.js 需在服务器才支持ie7,8 | 不支持内嵌style | 放在css之后 | 不要为CSS设置utf-8编码 -->
+<script src="js/Validform_v5.3.2_min.js"></script>
 <script src="js/pintuer.js"></script>
 <script src="js/layer/layer.js"></script>
 <script src="js/common-website.js"></script>
+<script src="js/Popt.js"></script>
+<script src="js/cityJson.js"></script>
+<script src="js/citySet.js"></script>
+<script type="text/javascript">
+    $("#info-area-input").click(function (e) {
+        SelCity(this, e);
+    });
+</script>
+<script type="text/javascript">
+    $(function () {
+        //协议弹窗
+        $("#privacy").click(function (e) {
+            layer.open({
+                type: 1,
+                skin: 'layui-layer-rim', //加上边框
+                title: ['网站服务协议', 'font-size:18px; height:55px; padding-top:5px'],
+                area: ['50%', '70%'], //宽高
+                shift: 0,  //动画0-6
+                move: false,
+                content: $('#agreement')
+            });
+        });
+        $("#agree_btn").click(function (e) {
+            layer.closeAll();
+        });
 
+        //$(".registerform").Validform();  //就这一行代码！;
+        $(".registerform").Validform({
+            tiptype: 3
+        });
+
+    })
+</script>
 </html>

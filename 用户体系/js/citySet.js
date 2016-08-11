@@ -1,6 +1,6 @@
 ﻿function SelCity(obj, e) {
     var ths = obj;
-    var dal = '<div class="_citys"><span id="cColse">x</span><ul id="_citysheng" class="_citys0"><li class="citySel">省份</li><li>城市</li></ul><div id="_citys0" class="_citys1"></div><div style="display:none" id="_citys1" class="_citys1"></div></div>';
+    var dal = '<div class="_citys"><span id="cColse">x</span><ul id="_citysheng" class="_citys0"><li class="citySel">省份</li><li>城市</li><li>区县</li></ul><div id="_citys0" class="_citys1"></div><div style="display:none" id="_citys1" class="_citys1"></div><div style="display:none" id="_citys2" class="_citys1"></div></div>';
     Iput.show({id: ths, event: e, content: dal});
     $("#cColse").click(function () {
         Iput.colse();
@@ -13,8 +13,11 @@
     $("#_citys0").append(tb_province.join(""));
 
 
+    //点击省
     $("#_citys0 a").click(function () {
+
         var g = getCity($(this));
+        $('#hcity,#hproper,#harea').remove();//点击省，清除前面数据
         $("#_citys1 a").remove();
         $("#_citys1").append(g);
         $("._citys1").hide();
@@ -40,7 +43,10 @@
             $("#hcity").val(lev);
             $("#hcity").attr("data-id", $(this).data("id"));
         }
+
+        //点击市
         $("#_citys1 a").click(function () {
+
             $("#_citys1 a").removeClass("AreaS");
             $(this).addClass("AreaS");
             var $city = $(this).attr("data-id");
@@ -56,6 +62,7 @@
                     val: lev
                 });
                 $(ths).after(hcitys);
+
             }
             else {
                 $("#hproper").attr("data-id", $(this).data("id"));
@@ -66,8 +73,40 @@
             ths.value = bc + "-" + $(this).data("name");
 
             var ar = getArea($(this));
-            Iput.colse();
+            $("#_citys2 a").remove();
+            $("#_citys2").append(ar);
             $("._citys1").hide();
+            $("._citys1:eq(2)").show();
+            $("#hcity").remove();
+
+
+            //点击地区
+            $("#_citys2 a").click(function () {
+
+                $("#_citys2 a").removeClass("AreaS");
+                $(this).addClass("AreaS");
+                var lev = $(this).data("name");
+                if (document.getElementById("harea") == null) {
+                    var hcitys = $('<input>', {
+                        type: 'hidden',
+                        name: "harea",
+                        "data-id": $(this).data("id"),
+                        id: "harea",
+                        val: lev
+                    });
+                    $(ths).after(hcitys);
+
+                }
+                else {
+                    $("#harea").val(lev);
+                    $("#harea").attr("data-id", $(this).data("id"));
+                }
+                var bc = $("#hcity").val();
+                var bp = $("#hproper").val();
+                ths.value = ths.value + "-" + $(this).data("name");
+                $("#hproper").remove();
+                Iput.colse();
+            });
 
 
         });

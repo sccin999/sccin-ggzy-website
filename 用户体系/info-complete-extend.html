@@ -10,7 +10,6 @@
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <link rel="icon" type="image/png" href="assets/i/favicon.png"/>
     <link rel="stylesheet" href="css/pintuer.css">
-
     <link rel="stylesheet" href="css/font-awesome.css"/>
     <!-- build:mincss css/style.min.css -->
     <link rel="stylesheet" href="css/general.css"/>
@@ -53,40 +52,39 @@
     <!--<div class="step reg-step-wrap">
         <div class="step-bar"><span class="step-point">1</span><span class="step-text">角色地区选择</span>
         </div>
-        <div class="step-bar"><span class="step-point active icon-pencil"></span><span class="step-text">基本信息</span>
+        <div class="step-bar"><span class="step-point">2</span><span class="step-text">基本信息</span>
         </div>
-        <div class="step-bar"><span class="step-point">3</span><span class="step-text">扩展信息</span></div>
+        <div class="step-bar"><span class="step-point active icon-pencil"></span><span class="step-text">扩展信息</span></div>
         <div class="step-bar"><span class="step-point">4</span><span class="step-text">附件上传</span></div>
         <a class="guide-menu" href="info-complete-guide.html">
             <i class="fa fa-bars"></i><span>返回导航</span>
         </a>
     </div>-->
+
     <div class="reg-step-arrow-wrap">
         <div class="step-arrow-bar step-arrow-finished step-arrow-first"><span class="step-arrow-point"><i
                 class="fa fa-pencil"></i>1</span><span class="step-arrow-text">角色地区选择</span>
         </div>
-        <div class="step-arrow-bar step-arrow-finished step-arrow-active"><span class="step-arrow-point"><i
-                class="fa fa-pencil"></i></span><span class="step-arrow-text">基本信息</span>
+        <div class="step-arrow-bar step-arrow-finished"><span class="step-arrow-point"><i
+                class="fa fa-pencil"></i>2</span><span class="step-arrow-text">基本信息</span>
         </div>
-        <div class="step-arrow-bar"><span class="step-arrow-point"><i class="fa fa-pencil"></i>3</span><span
-                class="step-arrow-text">扩展信息</span></div>
-        <div class="step-arrow-bar step-arrow-last "><span class="step-arrow-point"><i class="fa fa-pencil"></i>4</span><span
+        <div class="step-arrow-bar step-arrow-finished step-arrow-active"><span class="step-arrow-point"><i
+                class="fa fa-pencil"></i></span><span class="step-arrow-text">扩展信息</span></div>
+        <div class="step-arrow-bar  "><span class="step-arrow-point"><i class="fa fa-pencil"></i>4</span><span
                 class="step-arrow-text">附件上传</span></div>
+        <div class="step-arrow-bar step-arrow-last "><span class="step-arrow-point"><i class="fa fa-pencil"></i>5</span><span
+                class="step-arrow-text">提交审核</span></div>
     </div>
 </div>
 <div class="wrap-1200-mid">
     <!-- reg-box -->
-    <div class="reg-box-outer bg-white box-shadow-small" style="position: relative">
+
+    <div class="reg-box-outer bg-white box-shadow-small">
         <div class="pop-window-inner" style=" padding:50px 30px;">
             <form method="post" class="form-x form-auto  margin-big-bottom registerform" onsubmit="return false;">
-                <div class="form-group">
-                    <div class="label">
-                        <label>主体名称:&nbsp;&nbsp;</label>
-                    </div>
-                    <div class="field">
-                        <input type="text" value="" name="" size="40" class="input" datatype="*" nullmsg="请填写主体名称！"/>
-                        <span class="Validform_checktip"><i>*</i>请填写主体名称</span></div>
-                </div>
+
+                <h2 class="info-wrap-tit" style="margin-bottom: 30px;"><span
+                        class="font-size-medium">产权出让人/转让人扩展信息</span></h2>
 
                 <div class="form-group">
                     <div class="label">
@@ -97,127 +95,156 @@
                         <span class="Validform_checktip"><i>*</i>请填写主体代码</span></div>
                 </div>
 
-                <h2 class="info-wrap-tit" style="margin-bottom: 30px;"><span class="font-size-medium"><i>*</i>三证合一时填写三证合一的代码，国税和地税必填一个</span>
+                <div class="form-group">
+                    <div class="label">
+                        <label>是否国资:&nbsp;&nbsp;</label>
+                    </div>
+                    <div class="field">
+                        <input type="radio" id="chk1-1" value="" name="chk1" class="input"/>
+                        <label for="chk1-1">是</label>
+                        &nbsp;&nbsp;
+                        <input type="radio" id="chk1-2" value="" name="chk1" class="input"/>
+                        <label for="chk1-2">否</label>
+                        <span class="Validform_checktip">(非必填项)</span></div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label">
+                        <label>是否央企:&nbsp;&nbsp;</label>
+                    </div>
+                    <div class="field">
+                        <input type="radio" id="chk2-1" value="" name="chk2" class="input"/>
+                        <label for="chk2-1">是</label>
+                        &nbsp;&nbsp;
+                        <input type="radio" id="chk2-2" value="" name="chk2" class="input"/>
+                        <label for="chk2-2">否</label>
+                        <span class="Validform_checktip">(非必填项)</span></div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label">
+                        <label>国资监管类型:&nbsp;&nbsp;</label>
+                    </div>
+                    <div class="field">
+                        <select name="" class="input" style="width: 307px;">
+                            <option value="">请选择</option>
+                            <option value="1">类型1</option>
+                            <option value="1">类型2</option>
+                        </select>
+                        <span class="Validform_checktip">(非必填项)</span></div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label">
+                        <label>国资监管机构:&nbsp;&nbsp;</label>
+                    </div>
+                    <div class="field">
+                        <input type="text" value="" name="" size="40" class="input"/>
+                        <span class="Validform_checktip">(非必填项)</span></div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label label-two-lines">
+                        <label>主管集团或其他 <br> 部门名称:&nbsp;&nbsp;</label>
+                    </div>
+                    <div class="field">
+                        <input type="text" value="" name="" size="40" class="input"/>
+                        <span class="Validform_checktip">(非必填项)</span></div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="label label-two-lines">
+                        <label>主管集团或其他部门<br>组织机构代码:&nbsp;&nbsp;</label>
+                    </div>
+                    <div class="field">
+                        <input type="text" value="" name="" size="40" class="input"/>
+                        <span class="Validform_checktip">(非必填项)</span></div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="label">
+                        <label>成立时间:&nbsp;&nbsp;</label>
+                    </div>
+                    <div class="field">
+                        <input type="text" value="成立时间" name="" id="date-chengli" size="40" class="input"/>
+                        <span class="Validform_checktip">(非必填项)</span></div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label">
+                        <label>经济类型:&nbsp;&nbsp;</label>
+                    </div>
+                    <div class="field">
+                        <select name="" class="input" style="width: 307px;">
+                            <option value="">请选择</option>
+                            <option value="1">类型1</option>
+                            <option value="1">类型2</option>
+                        </select>
+                        <span class="Validform_checktip">(非必填项)</span></div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label ">
+                        <label>经营规模:&nbsp;&nbsp;</label>
+                    </div>
+                    <div class="field">
+                        <input type="text" value="" name="" size="40" class="input"/>
+                        <span class="Validform_checktip">(非必填项)</span></div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label ">
+                        <label>营业范围:&nbsp;&nbsp;</label>
+                    </div>
+                    <div class="field">
+                        <input type="text" value="" name="" size="40" class="input"/>
+                        <span class="Validform_checktip">(非必填项)</span></div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label ">
+                        <label>职工人数:&nbsp;&nbsp;</label>
+                    </div>
+                    <div class="field">
+                        <input type="text" value="" name="" size="40" class="input"/>
+                        <span class="Validform_checktip">(非必填项)</span></div>
+                </div>
+
+
+                <!-- 自然人扩展信息 -->
+
+                <h2 class="info-wrap-tit" style="margin-bottom: 30px;"><span class="font-size-medium">自然人角色扩展信息</span>
                 </h2>
 
                 <div class="form-group">
                     <div class="label">
-                        <label>国税证号:&nbsp;&nbsp;</label>
+                        <label>身份证号:&nbsp;&nbsp;</label>
                     </div>
                     <div class="field">
-                        <input type="text" value="" name="" size="40" class="input"/>
-                        <input type="text" value="国税证到期时间" name="" id="date-guo" size="20" class="input"/>
-                        <span class="Validform_checktip"></span></div>
+                        <input type="text" value="" name="" size="40" datatype=" /\w{18,18}/i" errormsg="请输入正确的身份证号"
+                               nullmsg="请输入身份证号" class="input"/>
+                        <input type="text" value="身份证失效时间" name="" id="date-id" size="20" class="input"/>
+                </div>
                 </div>
 
                 <div class="form-group">
                     <div class="label">
-                        <label>地税证号:&nbsp;&nbsp;</label>
+                        <label>身份证件类型:&nbsp;&nbsp;</label>
                     </div>
                     <div class="field">
-                        <input type="text" value="" name="" size="40" class="input"/>
-                        <input type="text" value="地税证到期时间" name="" id="date-di" size="20" class="input"/>
-                        <span class="Validform_checktip"></span></div>
-                </div>
-                <div class="form-group">
-                    <div class="label">
-                        <label>组织机构代码:&nbsp;&nbsp;</label>
-                    </div>
-                    <div class="field">
-                        <input type="text" value="" name="" size="40" class="input"/>
-                        <input type="text" value="组织机构代码证到期时间" name="" id="date-zzjg" size="20" class="input"/>
-                        <span class="Validform_checktip"></span></div>
-                </div>
-
-
-                <h2 class="info-wrap-tit" style="margin-bottom: 30px;"><span class="font-size-medium">其他基本信息</span></h2>
-
-                <div class="form-group">
-                    <div class="label">
-                        <label>法定代表人姓名:&nbsp;&nbsp;</label>
-                    </div>
-                    <div class="field">
-                        <input type="text" value name="name" size="40" class="input" datatype="zh2-4"
-                               nullmsg="请输入2到4个中文字符" errormsg="请输入2到4个中文字符"/>
-                        <span class="Validform_checktip"><i>*</i>请输入2到4个中文字符！</span>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <div class="label">
-                        <label>法人机构类别:&nbsp;&nbsp;</label>
-                    </div>
-                    <div class="field">
-                        <input type="text" value="" name="" size="40" class="input" datatype="*"/>
-                        <span class="Validform_checktip"><i>*</i>请填写法人机构类别</span></div>
-                </div>
-
-                <div class="form-group">
-                    <div class="label">
-                        <label>法人代表联系电话:&nbsp;&nbsp;</label>
-                    </div>
-                    <div class="field">
-                        <input type="text" value="" name="mobile" size="40" class="input"/>
-                        <span class="Validform_checktip">(非必填项)</span></div>
-                </div>
-
-                <div class="form-group">
-                    <div class="label">
-                        <label>法人机构行业代码:&nbsp;&nbsp;</label>
-                    </div>
-                    <div class="field">
-                        <input type="text" value="" name="mobile" size="40" class="input"/>
-                        <span class="Validform_checktip">(非必填项)</span></div>
-                </div>
-                <div class="form-group">
-                    <div class="label">
-                        <label>资信等级:&nbsp;&nbsp;</label>
-                    </div>
-                    <div class="field">
-                        <input type="text" value="" name="mobile" size="40" class="input"/>
-                        <span class="Validform_checktip">(非必填项)</span></div>
-                </div>
-                <div class="form-group">
-                    <div class="label">
-                        <label>国别/地区:&nbsp;&nbsp;</label>
-                    </div>
-                    <div class="field">
-                        <select name="" class="input" id="country" style="width: 120px;" datatype="*">
-                            <option value="1">中国</option>
-                            <option value="1">日本</option>
-                            <option value="1">韩国</option>
-                        </select>
-                        <select class="input" name="" id="province" style="width: 120px;" datatype="*">
-                            <option value="2">四川</option>
-                            <option value="2">广东</option>
-                            <option value="2">黑龙江</option>
-                        </select>
-                        <select class="input" name="" id="city" style="width: 120px;" datatype="*">
-                            <option value="3">成都</option>
-                            <option value="3">内江</option>
-                            <option value="4">泸州</option>
+                        <select name="" class="input" id="idCardType" style="width: 120px;" datatype="*">
+                            <option value="1">类型1</option>
+                            <option value="1">类型1</option>
+                            <option value="1">类型1</option>
                         </select>
                         <span class="Validform_checktip"><i>*</i>请选择国别和地区</span></div>
                 </div>
+
                 <div class="form-group">
                     <div class="label">
-                        <label>法人机构地址:&nbsp;&nbsp;</label>
-                    </div>
-                    <div class="field">
-                        <input type="text" value="" name="mobile" size="40" class="input"/>
-                        <span class="Validform_checktip">(非必填项)</span></div>
-                </div>
-                <div class="form-group">
-                    <div class="label">
-                        <label>行政区域代码:&nbsp;&nbsp;</label>
-                    </div>
-                    <div class="field">
-                        <input type="text" value="" name="" size="40" class="input" datatype="*"/>
-                        <span class="Validform_checktip"><i>*</i>请填写行政区域代码</span></div>
-                </div>
-                <div class="form-group">
-                    <div class="label">
-                        <label>联系人:&nbsp;&nbsp;</label>
+                        <label>姓名:&nbsp;&nbsp;</label>
                     </div>
                     <div class="field">
                         <input type="text" value name="name" size="40" class="input" datatype="zh2-4"
@@ -225,6 +252,7 @@
                         <span class="Validform_checktip"><i>*</i>请输入2到4个中文字符！</span>
                     </div>
                 </div>
+
                 <div class="form-group">
                     <div class="label">
                         <label>联系电话:&nbsp;&nbsp;</label>
@@ -237,56 +265,55 @@
 
                 <div class="form-group">
                     <div class="label">
-                        <label>联系人地址:&nbsp;&nbsp;</label>
+                        <label>银行账户:&nbsp;&nbsp;</label>
                     </div>
                     <div class="field">
-                        <input type="text" value="" name="mobile" size="40" class="input"/>
-                        <span class="Validform_checktip">(非必填项)</span></div>
+                        <input type="text" value="" name="" size="40" class="input" datatype="n"
+                               errormsg="请填写正确的银行账户卡号"/>
+                        <span class="Validform_checktip"><i>*</i>请填写银行账户卡号</span></div>
                 </div>
 
                 <div class="form-group">
                     <div class="label">
-                        <label>单位网站:&nbsp;&nbsp;</label>
+                        <label>开户行:&nbsp;&nbsp;</label>
                     </div>
                     <div class="field">
-                        <input type="text" value="" name="mobile" size="40" class="input"/>
-                        <span class="Validform_checktip">(非必填项)</span></div>
+                        <input type="text" value="" name="" size="40" class="input"/>
+                        <span class="Validform_checktip">（非必填项）</span></div>
                 </div>
 
                 <div class="form-group">
                     <div class="label">
-                        <label>邮政编码:&nbsp;&nbsp;</label>
+                        <label>邮编:&nbsp;&nbsp;</label>
                     </div>
                     <div class="field">
-                        <input type="text" value="" name="mobile" size="40" class="input"/>
-                        <span class="Validform_checktip">(非必填项)</span></div>
+                        <input type="text" value="" name="" size="40" class="input"/>
+                        <span class="Validform_checktip">（非必填项）</span></div>
                 </div>
 
                 <div class="form-group">
                     <div class="label">
-                        <label>电子邮箱:&nbsp;&nbsp;</label>
+                        <label>地址:&nbsp;&nbsp;</label>
                     </div>
                     <div class="field">
-                        <input type="text" value="" name="mobile" size="40" class="input"/>
-                        <span class="Validform_checktip">(非必填项)</span></div>
+                        <input type="text" value="" name="" size="40" class="input"/>
+                        <span class="Validform_checktip">（非必填项）</span></div>
                 </div>
 
 
 
                 <div class="fixed" data-style="fixed-bottom" data-offset-fixed="0">
                     <div class="form-button margin-top">
-                        <a href="info-complete-area&role.html" class="button bg-main button-big tips text-center"
+                        <a href="info-complete-base.html" class="button bg-main button-big tips text-center"
                            id="btn-prev" type="button"
                            style="width: 120px">上一步
                         </a>
                         &nbsp;&nbsp;
                         <button class="button bg-yellow button-big tips" id="btn-next" type="submit"
                                 style="width: 160px" data-toggle="hover" data-place="top" data-style="tips-style"
-                                title="基本信息填写完毕，下一步填写扩展信息。">保存并下一步
+                                title="扩展信息填写完毕，下一步上传附件。">保存并下一步
                         </button>
-                        &nbsp;&nbsp;
-
-                        <a href="info-complete-extend.html">验证完成转到扩展信息</a>
+                        <a href="info-complete-attachment.html">验证完成转到附件上传页面</a>
                     </div>
 
                 </div>
@@ -352,7 +379,11 @@
 <!-- 在线客服 -->
 <div id="leftsead">
     <ul>
-
+        <li>
+            <a class="guide-menu" href="info-complete-guide.html">
+                <span>返回<br>导航</span>
+            </a>
+        </li>
         <li>
             <a id="top_btn">
                 <i class="fa fa-angle-up"></i>
@@ -380,19 +411,14 @@
 <script type="text/javascript">
 
     laydate({
-        elem: '#date-guo'
+        elem: '#date-id'
     });
     laydate({
-        elem: '#date-di'
-    });
-    laydate({
-        elem: '#date-zzjg'
+        elem: '#date-chengli'
     });
 
 
     $(function () {
-        //提交提示
-
 
         //$(".registerform").Validform();  //就这一行代码！;
         $(".registerform").Validform({

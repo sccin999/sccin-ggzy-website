@@ -117,6 +117,7 @@ figure {
 }
 
 hr {
+  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -189,6 +190,8 @@ input[type="number"]::-webkit-outer-spin-button {
 
 input[type="search"] {
   -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -384,6 +387,7 @@ li {
 }
 
 .box-shadow-small {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -558,7 +562,7 @@ li {
 }
 
 .step .step-bar {
-  width: 25%;
+  width: 16.6666666%;
   background-color: #f0f0f0;
 }
 .step .step-point {
@@ -567,6 +571,7 @@ li {
   line-height: 30px;
   top: -10px;
   font-size: 16px;
+  -webkit-box-shadow: none;
   box-shadow: none;
   background-color: #f0f0f0;
   color: #666;
@@ -588,7 +593,7 @@ li {
   height: 32px;
 }
 .reg-step-arrow-wrap .step-arrow-bar {
-  width: 25%;
+  width: 200px;
   float: left;
   height: 32px;
   line-height: 32px;
@@ -596,7 +601,6 @@ li {
   background: url("../images/step-arrow-bg.png") 0 -128px no-repeat;
   text-align: center;
 }
-
 .reg-step-arrow-wrap .step-arrow-bar i.fa {
   display: none;
 }
@@ -604,7 +608,6 @@ li {
   background-position: 0 -32px;
   color: #fff;
 }
-
 .reg-step-arrow-wrap .step-arrow-bar.step-arrow-finished .step-arrow-point {
   font-size: 14px;
 }
@@ -614,17 +617,14 @@ li {
 .reg-step-arrow-wrap .step-arrow-bar.step-arrow-finished.step-arrow-last {
   background-position: 0 -64px;
 }
-
 .reg-step-arrow-wrap .step-arrow-bar.step-arrow-active {
-  font-size: 18px;
+  font-size: 16px;
 }
-
 .reg-step-arrow-wrap .step-arrow-bar.step-arrow-active .step-arrow-point {
   font-size: 14px;
   margin-right: 10px;
   display: inline-block;
 }
-
 .reg-step-arrow-wrap .step-arrow-bar.step-arrow-active .step-arrow-point i.fa {
   display: inline-block;
 }
@@ -760,6 +760,7 @@ li {
 }
 .guide-wrap .guide-item > a:hover {
   text-decoration: none;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   background-color: #6692ff;
   color: #fff;
@@ -881,6 +882,7 @@ li {
   color: #ccc;
 }
 .info-wrap-role .role-box label.active-label {
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
   border-color: #6692ff;
 }
@@ -1062,3 +1064,21 @@ li {
   border: none;
   box-shadow: none;
 }
+
+table {
+  margin-top: 10px;
+  position: relative;
+  top: 5px;
+}
+
+table td, table th {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  padding: 3px 8px;
+}
+
+table td a, table th a {
+  color: blue;
+}
+
+/*# sourceMappingURL=general.css.map */
